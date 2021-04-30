@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Contents of your S3 Bucket!</title>
+    </head>
+    <body>
+        <h2>Below are the files present in the selected folder!!</h2>
+	{% for file in files %}
+	<p>{{ file.key }}</p>
+	{% endfor %}
+    </body>
+</html>

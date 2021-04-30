@@ -1,0 +1,15 @@
+<html>
+
+<head>
+    <title>Contents of your S3 Bucket!</title>
+</head>
+
+<body>
+    <h1>Please find the S3 Buckets Below!</h1>
+    {% for bucket in buckets %}
+    <p><a href="{{ url_for('folders',bucket=bucket) }}">{{bucket}}</a></p>
+    {% endfor %}
+    <h4>Click on a bucket name to see its contents</h4>
+</body>
+
+</html>
